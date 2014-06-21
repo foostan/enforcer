@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
 require 'enforcer'
+require 'capistrano/setup'
+require 'capistrano/framework'
+Dir.glob('capistrano/tasks/*.rake').each { |r| import r }
+
 Enforcer::Ax.new.run

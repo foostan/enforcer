@@ -7,7 +7,7 @@ module Enforcer
     end
 
     def run
-      Capistrano::Application.invoke('consul')
+      Capistrano::Application.invoke('test')
     end
   end
 end
