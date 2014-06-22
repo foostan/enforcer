@@ -1,7 +1,3 @@
 #!/usr/bin/env ruby
 require 'enforcer'
-
-stage = ARGV[0]
-task = ARGV[1]
-
-Enforcer::Ax.new.run(stage, task)
+Enforcer::Ax.new.run
